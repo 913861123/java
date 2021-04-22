@@ -1,11 +1,10 @@
 import java.util.Scanner;
 public class AddSum{
     public static int addSum(int n){
-        int sum = 0;
         if(n==1){
             return n;
         }else{
-            return sum += n+addSum(n-1);
+            return n+addSum(n-1);
         }
     }
     public static void main(String[] args) {
